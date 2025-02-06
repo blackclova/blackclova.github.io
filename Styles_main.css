@@ -1,0 +1,17 @@
+.footer{
+    color: white;
+    background-color: black;
+}
+a[href^="tel:"] {
+    color: orange;
+    text-decoration: none;
+  }
+  
+  a[href^="tel:"]:hover {
+    text-decoration: underline;
+  }
+
+.info{
+    color: gray;
+}
+  
