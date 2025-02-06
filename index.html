@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Logomaf.ico">
-    <title>Mi Página Estática</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styles_anim.css">
+    <link rel="stylesheet" href="Styles_main.css">
+    <title>Terminos y condiciones</title>
 </head>
-<body>
-    <h1>¡Hola, mundo!</h1>
-    <p>Estamos en la nube</p>
+<body class="font-family-serif border border-secondary">
+  <div id="title" class="container text-center bd-primary">
+      <h1 class="color-tertiary-100">Terminos y condiciones generales de refaccionaria maria felix</h1>
+  </div>
+    <div id="condiciones" class="container">
+      <ul>
+        <li><p>En TOMCO, LUK Y BOGE es necesario realizar un reporte directamente con fabricante en caso de garantía, posterior a eso entregarlo en la sucursal donde se hizo su compra.</p></li>
+        <li><p>Para cualquier tipo de devolución o garantía es necesario que el producto no se encuentre con alteraciones o modificaciones, asi como presentar el empaque original y entregar el ticket.</p></li>
+      </ul>
+      
+      <h3>Garantías</h3>
+      <ul>
+        <li><p>En piezas originales no hay garantía.</p></li>
+        <li><p>Las garantías en baterías LTH o America se realizan directamente con el centro de servicios de LTH con ticket.</p></li>
+        <li><p>En partes eléctricas la garantía es al instalar.</p></li>
+        <li><p>En la compra de un solo amortiguador o soporte  en cualquier marca se pierde la garantía.</p></li>
+      </ul>
+      <h3>Devoluciones</h3>
+      <ul>
+        <li><p>El proceso de devolución o cambio por garantía no se realiza inmediatamente, teniendo como lapso un promedio de 2 semanas.</p></li>
+        <li><p>Devolución de casco por efectivo es valido máximo por el periodo de un mes.  </p></li>
+        <li><p>Para devoluciones se tiene un máximo de 1 semana.</p></li>
+      </ul>
+    </div>
+    <div class="container">
+      <h4>Nota</h4>
+      <p class="color-warning-50">REVISE SU PRODUCTO ANTES DE FINALIZAR SU COMPRA, YA QUE SI PRESENTA ALGUN DAÑO, LA EMPRESA NO SE HACE RESPONSABLE POR CAMBIOS O DEVOLUONES.</p>
+    </div>
     <!-- From Uiverse.io by vinodjangid07 --> 
-<div class="loader">
+    <div class="container text-center loader">
     <div class="truckWrapper">
       <div class="truckBody">
         <svg
@@ -142,109 +170,5 @@
   </div>
   
 </body>
-<style>
-    /* From Uiverse.io by vinodjangid07 */ 
-.loader {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.truckWrapper {
-  width: 200px;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-items: center;
-  justify-content: flex-end;
-  overflow-x: hidden;
-}
-/* truck upper body */
-.truckBody {
-  width: 130px;
-  height: fit-content;
-  margin-bottom: 6px;
-  animation: motion 1s linear infinite;
-}
-/* truck suspension animation*/
-@keyframes motion {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(3px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-/* truck's tires */
-.truckTires {
-  width: 130px;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 10px 0px 15px;
-  position: absolute;
-  bottom: 0;
-}
-.truckTires svg {
-  width: 24px;
-}
-
-.road {
-  width: 100%;
-  height: 1.5px;
-  background-color: #282828;
-  position: relative;
-  bottom: 0;
-  align-self: flex-end;
-  border-radius: 3px;
-}
-.road::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 100%;
-  background-color: #282828;
-  right: -50%;
-  border-radius: 3px;
-  animation: roadAnimation 1.4s linear infinite;
-  border-left: 10px solid white;
-}
-.road::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 100%;
-  background-color: #282828;
-  right: -65%;
-  border-radius: 3px;
-  animation: roadAnimation 1.4s linear infinite;
-  border-left: 4px solid white;
-}
-
-.lampPost {
-  position: absolute;
-  bottom: 0;
-  right: -90%;
-  height: 90px;
-  animation: roadAnimation 1.4s linear infinite;
-}
-
-@keyframes roadAnimation {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-350px);
-  }
-}
-
-</style>
 
 </html>
